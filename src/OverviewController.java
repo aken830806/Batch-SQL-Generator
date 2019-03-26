@@ -80,6 +80,7 @@ public class OverviewController {
 				num = num + 1;
 				ctr = ctr + 2;
 			}
+			overview.informDialog("提示", "","完成");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {

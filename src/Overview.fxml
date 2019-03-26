@@ -11,9 +11,9 @@
       <TextField fx:id="cer_id" layoutX="69.0" layoutY="21.0" prefHeight="23.0" prefWidth="90.0" />
       <TextField fx:id="cer_no" layoutX="217.0" layoutY="21.0" prefHeight="23.0" prefWidth="90.0" />
       <Label layoutX="175.0" layoutY="25.0" text="cer_no" />
-      <TextField fx:id="reader" layoutX="69.0" layoutY="69.0" prefHeight="23.0" prefWidth="238.0" />
+      <TextField fx:id="reader" disable="true" layoutX="69.0" layoutY="69.0" prefHeight="23.0" prefWidth="238.0" />
       <Label layoutX="28.0" layoutY="73.0" text="reader" />
-      <TextField fx:id="writer" layoutX="69.0" layoutY="113.0" prefHeight="23.0" prefWidth="238.0" />
+      <TextField fx:id="writer" disable="true" layoutX="69.0" layoutY="113.0" prefHeight="23.0" prefWidth="238.0" />
       <Label layoutX="30.0" layoutY="117.0" text="writer" />
       <Button fx:id="writerButton" layoutX="315.0" layoutY="113.0" mnemonicParsing="false" text="browse" />
       <Button fx:id="readerButton" layoutX="315.0" layoutY="69.0" mnemonicParsing="false" text="browse" />
