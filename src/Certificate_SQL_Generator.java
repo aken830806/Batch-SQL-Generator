@@ -21,14 +21,11 @@ public class Certificate_SQL_Generator{
 				if(!list.get(ctr+1).equals("NULL")) {
 					System.out.println("INSERT INTO `students` (`id`, `certificate_id`, `cer_no`, `name`, `mail`, `en_name`) VALUES (NULL,"+'"'+cer_id+'"'+","+'"'+cer_no+'"'+", "+'"'+list.get(ctr)+'"'+", "+'"'+list.get(ctr+1)+'"'+", '');");
 					fw.write("INSERT INTO `students` (`id`, `certificate_id`, `cer_no`, `name`, `mail`, `en_name`) VALUES (NULL,"+'"'+cer_id+'"'+","+'"'+cer_no+'"'+", "+'"'+list.get(ctr)+'"'+", "+'"'+list.get(ctr+1)+'"'+", '');\r\n");
-//					System.out.println("UPDATE course SET sponsor = "+'"'+list.get(ctr+1)+'"'+" WHERE id="+list.get(ctr)+";");
-//					fw.write("UPDATE course SET sponsor = "+'"'+list.get(ctr+1)+'"'+" WHERE id="+list.get(ctr)+";\r\n");
 				}
 				cer_no = cer_no + 1;
 				ctr = ctr + 2;
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally {
 			fw.close();
